@@ -1,0 +1,48 @@
+name: Sync RO-Crate from Google Sheets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build-ro-crate:
+    runs-on: ubuntu-latest
+    env:
+      # Required: set this repository secret to a Google Sheets export URL.
+      # Example:
+      # https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=xlsx&gid=0
+      GOOGLE_SHEET_EXPORT_URL: ${{ secrets.GOOGLE_SHEET_EXPORT_URL }}
+
+      # Optional: where to save the downloaded sheet during the workflow run.
+      SHEET_FILE: data/source.xlsx
+
+      # Optional: output directory (or file path) for generated RO-Crate content.
+      RO_CRATE_OUTPUT_PATH: ro-crate
+
+      # Optional: command used to run ro-crate-excel.
+      # This default assumes a Node CLI available from npm via npx.
+      # If you use a different install method, replace this command.
+      RO_CRATE_EXCEL_COMMAND: npx ro-crate-excel "$SHEET_FILE" "$RO_CRATE_OUTPUT_PATH"
+
+      # Optional: commit message for generated changes.
+      COMMIT_MESSAGE: "chore(ro-crate): sync from Google Sheets"
+
+      # CI behavior flags.
+      AUTO_COMMIT: "true"
+      AUTO_PUSH: "true"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync RO-Crate from spreadsheet
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash scripts/sync-ro-crate-from-sheets.sh
