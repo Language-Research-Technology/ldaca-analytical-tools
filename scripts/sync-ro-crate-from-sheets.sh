@@ -6,14 +6,21 @@ if [ -z "${GOOGLE_SHEET_EXPORT_URL:-}" ]; then
   exit 1
 fi
 
-SHEET_FILE="${SHEET_FILE:-data/ro-crate-metadata-tools.xlsx}"
-RO_CRATE_OUTPUT_PATH="${RO_CRATE_OUTPUT_PATH:-ro-crate}"
+SHEET_FILE="data/ro-crate-metadata-tools.xlsx"
+RO_CRATE_OUTPUT_PATH="ro-crate"
 RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-}"
 COMMIT_MESSAGE="${COMMIT_MESSAGE:-chore(ro-crate): sync from Google Sheets}"
 AUTO_COMMIT="${AUTO_COMMIT:-false}"
 AUTO_PUSH="${AUTO_PUSH:-false}"
 GIT_USER_NAME="${GIT_USER_NAME:-github-actions[bot]}"
 GIT_USER_EMAIL="${GIT_USER_EMAIL:-41898282+github-actions[bot]@users.noreply.github.com}"
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+if [[ "$RO_CRATE_OUTPUT_PATH" = /* ]]; then
+  RO_CRATE_OUTPUT_ABS="$RO_CRATE_OUTPUT_PATH"
+else
+  RO_CRATE_OUTPUT_ABS="$REPO_ROOT/$RO_CRATE_OUTPUT_PATH"
+fi
 
 echo "Downloading spreadsheet to $SHEET_FILE"
 mkdir -p "$(dirname "$SHEET_FILE")"
@@ -51,10 +58,21 @@ PY
 download_file
 test -s "$SHEET_FILE"
 
+echo "Working directory before conversion: $(pwd)"
+echo "RO-Crate output path: $RO_CRATE_OUTPUT_ABS"
+mkdir -p "$RO_CRATE_OUTPUT_ABS"
+
+if ! command -v sf >/dev/null 2>&1; then
+  echo "Missing required runtime dependency: sf (Siegfried)."
+  echo "In GitHub Actions/act, this is installed by the workflow step."
+  echo "For direct local script runs, install sf first."
+  exit 1
+fi
+
 if [ -x ./node_modules/.bin/rocxl ]; then
-  RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-./node_modules/.bin/rocxl \"$SHEET_FILE\" \"$RO_CRATE_OUTPUT_PATH\"}"
+  RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-./node_modules/.bin/rocxl \"$SHEET_FILE\" \"$RO_CRATE_OUTPUT_ABS\"}"
 elif [ -x ./node_modules/.bin/ro-crate-excel ]; then
-  RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-./node_modules/.bin/ro-crate-excel \"$SHEET_FILE\" \"$RO_CRATE_OUTPUT_PATH\"}"
+  RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-./node_modules/.bin/ro-crate-excel \"$SHEET_FILE\" \"$RO_CRATE_OUTPUT_ABS\"}"
 else
   echo "Missing local RO-Crate converter binary."
   echo "Install one of these packages in the repo: npm install --no-save rocxl"
@@ -64,6 +82,16 @@ fi
 
 echo "Generating RO-Crate using ro-crate-excel"
 eval "$RO_CRATE_EXCEL_COMMAND"
+
+echo "Working directory after conversion: $(pwd)"
+
+if [ -d "$RO_CRATE_OUTPUT_ABS" ]; then
+  echo "RO-Crate generated at: $RO_CRATE_OUTPUT_ABS"
+  find "$RO_CRATE_OUTPUT_ABS" -maxdepth 2 -print | sort
+else
+  echo "RO-Crate output path does not exist: $RO_CRATE_OUTPUT_ABS"
+  exit 1
+fi
 
 if [ "$AUTO_COMMIT" != "true" ]; then
   echo "AUTO_COMMIT is not true, skipping git commit"

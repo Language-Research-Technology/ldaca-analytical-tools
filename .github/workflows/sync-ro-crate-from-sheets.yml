@@ -15,12 +15,6 @@ jobs:
       # https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=xlsx&gid=0
       GOOGLE_SHEET_EXPORT_URL: ${{ secrets.GOOGLE_SHEET_EXPORT_URL }}
 
-      # Optional: where to save the downloaded sheet during the workflow run.
-      SHEET_FILE: data/ro-crate-metadata-tools.xlsx
-
-      # Optional: output directory (or file path) for generated RO-Crate content.
-      RO_CRATE_OUTPUT_PATH: ro-crate
-
       # Optional: command used to run the local RO-Crate converter.
       # The script will auto-detect rocxl or ro-crate-excel from node_modules/.bin.
       RO_CRATE_EXCEL_COMMAND: ""
@@ -42,6 +36,31 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      - name: Install and initialize siegfried
+        shell: bash
+        run: |
+          set -euo pipefail
+          SF_BIN="$(go env GOPATH)/bin/sf"
+          SF_SIG="${HOME}/.local/share/siegfried/default.sig"
+          SF_DATA_URL="https://github.com/richardlehane/siegfried/releases/download/v1.11.6/data_1-11-6.zip"
+
+          go install github.com/richardlehane/siegfried/cmd/sf@v1.11.6
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+          mkdir -p "$(dirname "$SF_SIG")"
+
+          # Avoid relying on sf -update endpoint in restricted networks.
+          curl -fsSL "$SF_DATA_URL" -o /tmp/siegfried-data.zip
+          unzip -p /tmp/siegfried-data.zip siegfried/default.sig > "$SF_SIG"
+
+          "$SF_BIN" -version
+          test -f "$SF_SIG"
 
       - name: Install RO-Crate converter locally
         shell: bash

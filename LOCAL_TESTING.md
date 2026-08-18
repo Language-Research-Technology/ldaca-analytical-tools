@@ -11,14 +11,13 @@ Prerequisites:
 - git
 - curl, wget, or python3
 - node and npm
+- sf (Siegfried) available on PATH
 - a local install of rocxl or ro-crate-excel in node_modules/.bin
 
 From repo root:
 
 ```bash
 export GOOGLE_SHEET_EXPORT_URL='https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=xlsx&gid=0'
-export SHEET_FILE='data/ro-crate-metadata-tools.xlsx'
-export RO_CRATE_OUTPUT_PATH='ro-crate'
 
 # install the local CLI once in the repo
 npm install --no-save rocxl || npm install --no-save ro-crate-excel
@@ -43,6 +42,7 @@ Install act: https://github.com/nektos/act
 `brew install act`
 
 This repo includes a [.actrc](.actrc) file that tells act to use a fuller Ubuntu image instead of the micro image. That avoids missing tools like `curl`.
+The workflow installs and initializes Siegfried (`sf`) automatically for `act` runs.
 
 Create a local secrets file named .secrets.act:
 
