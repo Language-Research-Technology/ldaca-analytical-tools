@@ -2,8 +2,6 @@ name: Sync RO-Crate from Google Sheets
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 2 * * *"
 
 permissions:
   contents: write
@@ -18,15 +16,14 @@ jobs:
       GOOGLE_SHEET_EXPORT_URL: ${{ secrets.GOOGLE_SHEET_EXPORT_URL }}
 
       # Optional: where to save the downloaded sheet during the workflow run.
-      SHEET_FILE: data/source.xlsx
+      SHEET_FILE: data/ro-crate-metadata-tools.xlsx
 
       # Optional: output directory (or file path) for generated RO-Crate content.
       RO_CRATE_OUTPUT_PATH: ro-crate
 
-      # Optional: command used to run ro-crate-excel.
-      # This default assumes a Node CLI available from npm via npx.
-      # If you use a different install method, replace this command.
-      RO_CRATE_EXCEL_COMMAND: npx ro-crate-excel "$SHEET_FILE" "$RO_CRATE_OUTPUT_PATH"
+      # Optional: command used to run the local RO-Crate converter.
+      # The script will auto-detect rocxl or ro-crate-excel from node_modules/.bin.
+      RO_CRATE_EXCEL_COMMAND: ""
 
       # Optional: commit message for generated changes.
       COMMIT_MESSAGE: "chore(ro-crate): sync from Google Sheets"
@@ -40,6 +37,17 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install RO-Crate converter locally
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --no-save rocxl || npm install --no-save ro-crate-excel
 
       - name: Sync RO-Crate from spreadsheet
         shell: bash

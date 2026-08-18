@@ -9,17 +9,19 @@ This repository includes one shared script used by both local runs and GitHub Ac
 Prerequisites:
 
 - git
-- curl
-- node and npm (if using the default npx command)
-- ro-crate-excel available via npx or your custom command
+- curl, wget, or python3
+- node and npm
+- a local install of rocxl or ro-crate-excel in node_modules/.bin
 
 From repo root:
 
 ```bash
 export GOOGLE_SHEET_EXPORT_URL='https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=xlsx&gid=0'
-export SHEET_FILE='data/source.xlsx'
+export SHEET_FILE='data/ro-crate-metadata-tools.xlsx'
 export RO_CRATE_OUTPUT_PATH='ro-crate'
-export RO_CRATE_EXCEL_COMMAND='npx ro-crate-excel "$SHEET_FILE" "$RO_CRATE_OUTPUT_PATH"'
+
+# install the local CLI once in the repo
+npm install --no-save rocxl || npm install --no-save ro-crate-excel
 
 # test conversion only (no commit)
 bash scripts/sync-ro-crate-from-sheets.sh
@@ -40,6 +42,8 @@ Install act: https://github.com/nektos/act
 -- on mac with Homebrew:
 `brew install act`
 
+This repo includes a [.actrc](.actrc) file that tells act to use a fuller Ubuntu image instead of the micro image. That avoids missing tools like `curl`.
+
 Create a local secrets file named .secrets.act:
 
 ```bash
@@ -50,6 +54,12 @@ Run the workflow_dispatch event:
 
 ```bash
 act workflow_dispatch -W .github/workflows/sync-ro-crate-from-sheets.yml --secret-file .secrets.act
+```
+
+If you want to override the repo default manually, use:
+
+```bash
+act workflow_dispatch -W .github/workflows/sync-ro-crate-from-sheets.yml --secret-file .secrets.act -P ubuntu-latest=ghcr.io/catthehacker/ubuntu:act-latest --container-architecture linux/amd64
 ```
 
 Note:

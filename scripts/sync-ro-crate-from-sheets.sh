@@ -6,9 +6,9 @@ if [ -z "${GOOGLE_SHEET_EXPORT_URL:-}" ]; then
   exit 1
 fi
 
-SHEET_FILE="${SHEET_FILE:-data/source.xlsx}"
+SHEET_FILE="${SHEET_FILE:-data/ro-crate-metadata-tools.xlsx}"
 RO_CRATE_OUTPUT_PATH="${RO_CRATE_OUTPUT_PATH:-ro-crate}"
-RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-npx ro-crate-excel \"$SHEET_FILE\" \"$RO_CRATE_OUTPUT_PATH\"}"
+RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-}"
 COMMIT_MESSAGE="${COMMIT_MESSAGE:-chore(ro-crate): sync from Google Sheets}"
 AUTO_COMMIT="${AUTO_COMMIT:-false}"
 AUTO_PUSH="${AUTO_PUSH:-false}"
@@ -17,8 +17,50 @@ GIT_USER_EMAIL="${GIT_USER_EMAIL:-41898282+github-actions[bot]@users.noreply.git
 
 echo "Downloading spreadsheet to $SHEET_FILE"
 mkdir -p "$(dirname "$SHEET_FILE")"
-curl -fsSL "$GOOGLE_SHEET_EXPORT_URL" -o "$SHEET_FILE"
+
+download_file() {
+  if command -v curl >/dev/null 2>&1; then
+    curl -fsSL "$GOOGLE_SHEET_EXPORT_URL" -o "$SHEET_FILE"
+    return
+  fi
+
+  if command -v wget >/dev/null 2>&1; then
+    wget -qO "$SHEET_FILE" "$GOOGLE_SHEET_EXPORT_URL"
+    return
+  fi
+
+  if command -v python3 >/dev/null 2>&1; then
+    python3 - "$GOOGLE_SHEET_EXPORT_URL" "$SHEET_FILE" <<'PY'
+import pathlib
+import sys
+import urllib.request
+
+url = sys.argv[1]
+target = pathlib.Path(sys.argv[2])
+
+with urllib.request.urlopen(url) as response:
+    target.write_bytes(response.read())
+PY
+    return
+  fi
+
+  echo "No supported download tool found. Install curl, wget, or python3."
+  exit 1
+}
+
+download_file
 test -s "$SHEET_FILE"
+
+if [ -x ./node_modules/.bin/rocxl ]; then
+  RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-./node_modules/.bin/rocxl \"$SHEET_FILE\" \"$RO_CRATE_OUTPUT_PATH\"}"
+elif [ -x ./node_modules/.bin/ro-crate-excel ]; then
+  RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-./node_modules/.bin/ro-crate-excel \"$SHEET_FILE\" \"$RO_CRATE_OUTPUT_PATH\"}"
+else
+  echo "Missing local RO-Crate converter binary."
+  echo "Install one of these packages in the repo: npm install --no-save rocxl"
+  echo "or: npm install --no-save ro-crate-excel"
+  exit 1
+fi
 
 echo "Generating RO-Crate using ro-crate-excel"
 eval "$RO_CRATE_EXCEL_COMMAND"
