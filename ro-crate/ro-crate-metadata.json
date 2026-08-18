@@ -7,11 +7,6 @@
   ],
   "@graph": [
     {
-      "@id": "./",
-      "@type": "Dataset",
-      "hasPart": []
-    },
-    {
       "@id": "ro-crate-metadata.json",
       "@type": "CreativeWork",
       "identifier": "ro-crate-metadata.json",
@@ -21,6 +16,13 @@
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.2"
       }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "hasPart": [
+        ""
+      ]
     }
   ]
 }

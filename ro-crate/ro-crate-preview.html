@@ -455,21 +455,14 @@
         
       <select onchange="location.href=this.value">
         <option value="disabled selected">Select a type</option>
-            <option value="#types_Dataset">Dataset</option>
             <option value="#types_CreativeWork">CreativeWork</option>
+            <option value="#types_Dataset">Dataset</option>
       </select>
         <p>OR</p>
         <!--
     -->
       </div>
           <!-- Think this is where the function for displaying selected item of drop down list should go but not sure -->
-              <div id="types_Dataset" class="drop-down">
-                <div class="entity-grid">
-                  <h2>Dataset (1)</h2>
-                  <div class="short">
-                  </div>
-                </div>
-              </div>
               <div id="types_CreativeWork" class="drop-down">
                 <div class="entity-grid">
                   <h2>CreativeWork (1)</h2>
@@ -479,6 +472,13 @@
                               ro-crate-metadata.json
                           </a>
                         </div>
+                  </div>
+                </div>
+              </div>
+              <div id="types_Dataset" class="drop-down">
+                <div class="entity-grid">
+                  <h2>Dataset (1)</h2>
+                  <div class="short">
                   </div>
                 </div>
               </div>
@@ -569,8 +569,8 @@
         
       <select onchange="location.href=this.value">
         <option value="disabled selected">Select a type</option>
-            <option value="#types_Dataset">Dataset</option>
             <option value="#types_CreativeWork">CreativeWork</option>
+            <option value="#types_Dataset">Dataset</option>
       </select>
         <p>OR</p>
         <!--
