@@ -3,8 +3,8 @@
 This repository includes a workflow and script that:
 
 1. Downloads an Excel file exported from Google Sheets.
-2. Places it in the crate folder as additional-ro-crate-metadata.xlsx.
-3. Runs xlro in add mode to update RO-Crate metadata.
+2. Places it in the crate folder as ro-crate-metadata.xlsx.
+3. Runs rocxl against the RO-Crate directory to update metadata.
 4. Commits and pushes generated changes.
 
 ## Files
@@ -18,11 +18,11 @@ The script currently uses these fixed paths:
 
 - Downloaded spreadsheet: data/ro-crate-metadata-tools.xlsx
 - RO-Crate directory: ro-crate
-- Spreadsheet used by xlro add mode: ro-crate/additional-ro-crate-metadata.xlsx
+- Spreadsheet used by rocxl: ro-crate/ro-crate-metadata.xlsx
 
 Then it runs:
 
-    xlro -a ro-crate
+    rocxl ro-crate
 
 (Using the local CLI from node_modules/.bin.)
 
@@ -35,7 +35,7 @@ Set the repository secret used by the workflow:
 3. Go to Secrets and variables > Actions.
 4. Under Repository secrets, add or update:
    - Name: GOOGLE_SHEET_EXPORT_URL
-   - Value: your Google Sheets export URL (xlsx format)
+    - Value: your Google Sheets export URL (xlsx format)
 
 Example export URL format:
 

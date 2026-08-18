@@ -62,10 +62,10 @@ echo "Working directory before conversion: $(pwd)"
 echo "RO-Crate output path: $RO_CRATE_OUTPUT_ABS"
 mkdir -p "$RO_CRATE_OUTPUT_ABS"
 
-# For additive updates, xlro expects additional-ro-crate-metadata.xlsx.
-TARGET_XLSX="$RO_CRATE_OUTPUT_ABS/additional-ro-crate-metadata.xlsx"
+# rocxl expects the workbook to be named ro-crate-metadata.xlsx.
+TARGET_XLSX="$RO_CRATE_OUTPUT_ABS/ro-crate-metadata.xlsx"
 cp "$SHEET_FILE" "$TARGET_XLSX"
-echo "Prepared workbook for xlro add mode at: $TARGET_XLSX"
+echo "Prepared workbook for rocxl at: $TARGET_XLSX"
 
 if ! command -v sf >/dev/null 2>&1; then
   echo "Missing required runtime dependency: sf (Siegfried)."
@@ -74,19 +74,15 @@ if ! command -v sf >/dev/null 2>&1; then
   exit 1
 fi
 
-if [ -x ./node_modules/.bin/xlro ]; then
-  RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-./node_modules/.bin/xlro -a \"$RO_CRATE_OUTPUT_ABS\"}"
-elif [ -x ./node_modules/.bin/rocxl ]; then
-  RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-./node_modules/.bin/rocxl -a \"$RO_CRATE_OUTPUT_ABS\"}"
-elif [ -x ./node_modules/.bin/ro-crate-excel ]; then
-  RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-./node_modules/.bin/ro-crate-excel -a \"$RO_CRATE_OUTPUT_ABS\"}"
+if [ -x ./node_modules/.bin/rocxl ]; then
+  RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-./node_modules/.bin/rocxl \"$RO_CRATE_OUTPUT_ABS\"}"
 else
   echo "Missing local RO-Crate converter binary."
   echo "Install package in the repo: npm install --no-save ro-crate-excel"
   exit 1
 fi
 
-echo "Generating RO-Crate using xlro/ro-crate-excel"
+echo "Generating RO-Crate using rocxl"
 eval "$RO_CRATE_EXCEL_COMMAND"
 
 echo "Working directory after conversion: $(pwd)"

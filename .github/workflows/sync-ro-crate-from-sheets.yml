@@ -16,7 +16,7 @@ jobs:
       GOOGLE_SHEET_EXPORT_URL: ${{ secrets.GOOGLE_SHEET_EXPORT_URL }}
 
       # Optional: command used to run the local RO-Crate converter.
-      # The script will auto-detect xlro first from node_modules/.bin.
+      # The script will auto-detect rocxl from node_modules/.bin.
       RO_CRATE_EXCEL_COMMAND: ""
 
       # Optional: commit message for generated changes.

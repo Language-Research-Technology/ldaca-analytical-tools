@@ -12,7 +12,7 @@ Prerequisites:
 - curl, wget, or python3
 - node and npm
 - sf (Siegfried) available on PATH
-- a local install of ro-crate-excel (provides xlro) in node_modules/.bin
+- a local install of ro-crate-excel (provides rocxl) in node_modules/.bin
 
 From repo root:
 
@@ -21,6 +21,8 @@ export GOOGLE_SHEET_EXPORT_URL='https://docs.google.com/spreadsheets/d/<SHEET_ID
 
 # install the local CLI once in the repo
 npm install --no-save ro-crate-excel
+
+# the script will copy the spreadsheet to ro-crate/ro-crate-metadata.xlsx
 
 # test conversion only (no commit)
 bash scripts/sync-ro-crate-from-sheets.sh
