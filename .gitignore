@@ -1,3 +1,4 @@
 .secrets.act
 test-data/*
 .tmp-*
+.DS_Store

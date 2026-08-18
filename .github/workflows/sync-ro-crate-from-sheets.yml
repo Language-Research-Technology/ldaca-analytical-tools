@@ -16,7 +16,7 @@ jobs:
       GOOGLE_SHEET_EXPORT_URL: ${{ secrets.GOOGLE_SHEET_EXPORT_URL }}
 
       # Optional: command used to run the local RO-Crate converter.
-      # The script will auto-detect rocxl or ro-crate-excel from node_modules/.bin.
+      # The script will auto-detect xlro first from node_modules/.bin.
       RO_CRATE_EXCEL_COMMAND: ""
 
       # Optional: commit message for generated changes.
@@ -66,7 +66,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          npm install --no-save rocxl || npm install --no-save ro-crate-excel
+          npm install --no-save ro-crate-excel
 
       - name: Sync RO-Crate from spreadsheet
         shell: bash
