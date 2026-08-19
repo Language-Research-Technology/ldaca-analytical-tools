@@ -7,20 +7,8 @@
   ],
   "@graph": [
     {
-      "@id": "ro-crate-metadata.json",
-      "@type": "CreativeWork",
-      "identifier": "ro-crate-metadata.json",
-      "about": {
-        "@id": "./"
-      },
-      "conformsTo": {
-        "@id": "https://w3id.org/ro/crate/1.2"
-      }
-    },
-    {
       "@id": "./",
       "@type": "Dataset",
-      "hasPart": "",
       "pcdm:hasMember": [
         {
           "@id": "arcp://name,AnonymisingELANFiles"
@@ -112,7 +100,26 @@
         {
           "@id": "arcp://name,WordWebber"
         }
+      ],
+      "hasPart": [
+        {
+          "@id": "additional-ro-crate-metadata.xlsx"
+        },
+        {
+          "@id": "images"
+        }
       ]
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      }
     },
     {
       "@id": "arcp://name,AnonymisingELANFiles",
@@ -966,6 +973,25 @@
       "custom:dataFormat": "xlsx",
       "custom:codeURL": "https://ladal.edu.au/tools.html#wordwebber",
       "custom:additionalNotes": "You will need to provide structured data describing the edges and their weights in your network of interest"
+    },
+    {
+      "@id": "additional-ro-crate-metadata.xlsx",
+      "@type": "File",
+      "name": "additional-ro-crate-metadata.xlsx",
+      "description": "",
+      "contentSize": 16253,
+      "dateModified": "2026-08-19T02:08:09Z",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/214"
+        },
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      ]
+    },
+    {
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/214",
+      "@type": "DigitalFormat",
+      "name": "Microsoft Excel for Windows"
     }
   ]
 }
