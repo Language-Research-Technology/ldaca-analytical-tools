@@ -6,7 +6,7 @@ if [ -z "${GOOGLE_SHEET_EXPORT_URL:-}" ]; then
   exit 1
 fi
 
-SHEET_FILE="data/ro-crate-metadata-tools.xlsx"
+SHEET_FILE=""
 RO_CRATE_OUTPUT_PATH="ro-crate"
 RO_CRATE_EXCEL_COMMAND="${RO_CRATE_EXCEL_COMMAND:-}"
 COMMIT_MESSAGE="${COMMIT_MESSAGE:-chore(ro-crate): sync from Google Sheets}"
@@ -22,8 +22,7 @@ else
   RO_CRATE_OUTPUT_ABS="$REPO_ROOT/$RO_CRATE_OUTPUT_PATH"
 fi
 
-echo "Downloading spreadsheet to $SHEET_FILE"
-mkdir -p "$(dirname "$SHEET_FILE")"
+echo "Preparing spreadsheet download"
 
 download_file() {
   if command -v curl >/dev/null 2>&1; then
@@ -55,16 +54,21 @@ PY
   exit 1
 }
 
-download_file
-test -s "$SHEET_FILE"
-
 echo "Working directory before conversion: $(pwd)"
 echo "RO-Crate output path: $RO_CRATE_OUTPUT_ABS"
 mkdir -p "$RO_CRATE_OUTPUT_ABS"
 
 # rocxl expects the workbook to be named ro-crate-metadata.xlsx.
 TARGET_XLSX="$RO_CRATE_OUTPUT_ABS/ro-crate-metadata.xlsx"
-cp "$SHEET_FILE" "$TARGET_XLSX"
+TARGET_JSON="$RO_CRATE_OUTPUT_ABS/ro-crate-metadata.json"
+TARGET_PREVIEW_HTML="$RO_CRATE_OUTPUT_ABS/ro-crate-preview.html"
+rm -f "$TARGET_XLSX"
+rm -f "$TARGET_JSON"
+rm -f "$TARGET_PREVIEW_HTML"
+SHEET_FILE="$TARGET_XLSX"
+echo "Downloading spreadsheet directly to: $SHEET_FILE"
+download_file
+test -s "$SHEET_FILE"
 echo "Prepared workbook for rocxl at: $TARGET_XLSX"
 
 if ! command -v sf >/dev/null 2>&1; then

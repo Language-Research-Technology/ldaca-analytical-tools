@@ -48,7 +48,7 @@
       "name": "LDaCA Tools Catalogue",
       "description": "This is a collection listing all the LDaCA tools.",
       "ldac:doi": "",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "inLanguage": "English",
       "ldac:metadataIsPublic": true,
       "author": {
@@ -165,9 +165,6 @@
         }
       ],
       "hasPart": [
-        {
-          "@id": "additional-ro-crate-metadata.xlsx"
-        },
         {
           "@id": "images"
         }
@@ -293,7 +290,7 @@
         "@id": "./"
       },
       "name": "Anonymising ELAN Files",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -316,7 +313,7 @@
         "@id": "./"
       },
       "name": "Collocation Analyser",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -344,7 +341,7 @@
         "@id": "./"
       },
       "name": "CollocationCalculator",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -372,7 +369,7 @@
         "@id": "./"
       },
       "name": "Concordance Explorer",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -400,7 +397,7 @@
         "@id": "./"
       },
       "name": "Concordancer",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -430,7 +427,7 @@
         "@id": "./"
       },
       "name": "Crate-O",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -459,7 +456,7 @@
         "@id": "./"
       },
       "name": "Discursis",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -487,7 +484,7 @@
         "@id": "./"
       },
       "name": "Document Similarity",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -522,7 +519,7 @@
         "@id": "./"
       },
       "name": "ELAN Annotation Splitter",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -545,7 +542,7 @@
         "@id": "./"
       },
       "name": "ELAN Audio Segmentation",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -568,7 +565,7 @@
         "@id": "./"
       },
       "name": "ELAN Commander",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -591,7 +588,7 @@
         "@id": "./"
       },
       "name": "ELAN Inventory",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -614,7 +611,7 @@
         "@id": "./"
       },
       "name": "ELAN Replacer",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -637,7 +634,7 @@
         "@id": "./"
       },
       "name": "FileRenamer",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -665,7 +662,7 @@
         "@id": "./"
       },
       "name": "Image Dataset Explorer",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -701,7 +698,7 @@
         "@id": "./"
       },
       "name": "Keyword Finder",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -729,7 +726,7 @@
         "@id": "./"
       },
       "name": "KeywordExtractor",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -757,7 +754,7 @@
         "@id": "./"
       },
       "name": "Keywords Analysis",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -792,7 +789,7 @@
         "@id": "./"
       },
       "name": "Lameta",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": {
         "@id": "https://ror.org/01ej9dk98"
       },
@@ -822,7 +819,7 @@
         "@id": "./"
       },
       "name": "Network Visualiser",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -851,7 +848,7 @@
         "@id": "./"
       },
       "name": "Part-of-Speech Tagger",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -879,7 +876,7 @@
         "@id": "./"
       },
       "name": "POSTagger",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -907,7 +904,7 @@
         "@id": "./"
       },
       "name": "Quotation Tool",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -942,7 +939,7 @@
         "@id": "./"
       },
       "name": "Semantic Tagger (English)",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -977,7 +974,7 @@
         "@id": "./"
       },
       "name": "SentimentExplorer",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -1005,7 +1002,7 @@
         "@id": "./"
       },
       "name": "TextCleaner",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -1033,7 +1030,7 @@
         "@id": "./"
       },
       "name": "Topic Explorer",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -1061,7 +1058,7 @@
         "@id": "./"
       },
       "name": "TopicDetector",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -1089,7 +1086,7 @@
         "@id": "./"
       },
       "name": "WordFinder",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -1117,7 +1114,7 @@
         "@id": "./"
       },
       "name": "WordWebber",
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -1154,7 +1151,7 @@
       "input": {
         "@id": "arcp://name,hdl10.26180~23961609"
       },
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "encodingFormat": "application/x-ipynb+json",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
@@ -1198,7 +1195,7 @@
       "input": {
         "@id": "arcp://name,doi10.4225%2F35%2F555d661071c76"
       },
-      "datePublished": "Sun Jul 07 2024 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sun Jul 07 2024 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "encodingFormat": "application/x-ipynb+json",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
@@ -1273,7 +1270,7 @@
       "input": {
         "@id": "arcp://name,hdl10.25912~RDF_1758591652309"
       },
-      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
       "encodingFormat": "application/x-ipynb+json",
       "publisher": [
         {
@@ -1300,25 +1297,6 @@
     {
       "@id": "test_file.jpg",
       "@type": "File"
-    },
-    {
-      "@id": "additional-ro-crate-metadata.xlsx",
-      "@type": "File",
-      "name": "additional-ro-crate-metadata.xlsx",
-      "description": "",
-      "contentSize": 16253,
-      "dateModified": "2026-08-19T02:36:29Z",
-      "encodingFormat": [
-        {
-          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/214"
-        },
-        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-      ]
-    },
-    {
-      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/214",
-      "@type": "DigitalFormat",
-      "name": "Microsoft Excel for Windows"
     }
   ]
 }

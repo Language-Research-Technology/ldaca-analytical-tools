@@ -39,7 +39,7 @@ Set the repository secret used by the workflow:
 
 Example export URL format:
 
-https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=xlsx&gid=0
+https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=xlsx
 
 ## Run In GitHub (Manual)
 
