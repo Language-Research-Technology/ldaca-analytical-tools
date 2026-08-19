@@ -2,13 +2,64 @@
   "@context": [
     "https://w3id.org/ro/crate/1.2/context",
     {
-      "@vocab": "http://schema.org/"
+      "@vocab": "http://schema.org/",
+      "ldac": "https://w3id.org/ldac/terms#",
+      "custom": "arcp://name,custom/terms#"
     }
   ],
   "@graph": [
     {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      }
+    },
+    {
+      "@id": "https://github.com/Language-Research-Technology",
+      "@type": "Organization",
+      "name": "Language Data Commons of Australia"
+    },
+    {
+      "@id": "https://ror.org/00rqy9422",
+      "@type": "Organization",
+      "name": "The University of Queensland"
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by/4.0/",
+      "@type": "ldac:DataReuseLicense",
+      "name": "Attribution 4.0 International (CC BY 4.0)",
+      "description": "You are free to: Share — copy and redistribute the material in any medium or format. Adapt — remix, transform, and build upon the material for any purpose, even commercially. This license is acceptable for Free Cultural Works. The licensor cannot revoke these freedoms as long as you follow the license terms.",
+      "ldac:allowTextIndex": true,
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
       "@id": "./",
-      "@type": "Dataset",
+      "@type": [
+        "Dataset",
+        "RepositoryCollection"
+      ],
+      "name": "LDaCA Tools Catalogue",
+      "description": "This is a collection listing all the LDaCA tools.",
+      "ldac:doi": "",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "inLanguage": "English",
+      "ldac:metadataIsPublic": true,
+      "author": {
+        "@id": "https://github.com/Language-Research-Technology"
+      },
+      "publisher": {
+        "@id": "https://ror.org/00rqy9422"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
       "pcdm:hasMember": [
         {
           "@id": "arcp://name,AnonymisingELANFiles"
@@ -99,6 +150,18 @@
         },
         {
           "@id": "arcp://name,WordWebber"
+        },
+        {
+          "@id": "https://github.com/Supertyp/Anonymising_ELAN_files"
+        },
+        {
+          "@id": "https://github.com/Australian-Text-Analytics-Platform/farms-to-freeways"
+        },
+        {
+          "@id": "https://data.ldaca.edu.au/object?_id=https%3A%2F%2Fgithub.com%2FAustralian-Text-Analytics-Platform%2Fnotebook-ausreddit%2Fblob%2Fmain%2Fexploration.ipynb"
+        },
+        {
+          "@id": "https://data.ldaca.edu.au/object?_id=https%3A%2F%2Fgithub.com%2FAustralian-Text-Analytics-Platform%2Fnotebook-twittersphere%2Fblob%2Fmain%2Fexploration.ipynb"
         }
       ],
       "hasPart": [
@@ -111,15 +174,114 @@
       ]
     },
     {
-      "@id": "ro-crate-metadata.json",
-      "@type": "CreativeWork",
-      "identifier": "ro-crate-metadata.json",
-      "about": {
-        "@id": "./"
-      },
-      "conformsTo": {
-        "@id": "https://w3id.org/ro/crate/1.2"
-      }
+      "@id": "https://ror.org/019wvm592",
+      "@type": "Organization",
+      "name": "Australian National University"
+    },
+    {
+      "@id": "https://ror.org/01ej9dk98",
+      "@type": "Organization",
+      "name": "The University of Melbourne"
+    },
+    {
+      "@id": "https://ror.org/0384j8v12",
+      "@type": "Organization",
+      "name": "The University of Sydney"
+    },
+    {
+      "@id": "https://ror.org/03pnv4752",
+      "@type": "Organization",
+      "name": "Queensland University of Technology"
+    },
+    {
+      "@id": "https://github.com/Sydney-Informatics-Hub",
+      "@type": "Organization",
+      "name": "Sydney Informatics Hub"
+    },
+    {
+      "@id": "https://github.com/QUT-Digital-Observatory",
+      "@type": "Organization",
+      "name": "Digital Observatory"
+    },
+    {
+      "@id": "https://github.com/SLCLADAL/ladal",
+      "@type": "Organization",
+      "name": "Language Technology and Data Analysis Laboratory"
+    },
+    {
+      "@id": "https://hass.uq.edu.au/centre-digital-cultures-societies",
+      "@type": "Organization",
+      "name": "Centre for Digital Cultures & Societies"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1428-2649",
+      "@type": "Person",
+      "name": "Chao Sun"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-4603-9521",
+      "@type": "Person",
+      "name": "Jasper Chong"
+    },
+    {
+      "@id": "#JohnHatton",
+      "@type": "Person",
+      "name": "John Hatton"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3616-6235",
+      "@type": "Person",
+      "name": "Marius Mather"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1923-9153",
+      "@type": "Person",
+      "name": "Martin Schweinberger"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4438-2755",
+      "@type": "Person",
+      "name": "Moises Sacal Bonequi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8797-1018",
+      "@type": "Person",
+      "name": "Nick Thieberger"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2933-6627",
+      "@type": "Person",
+      "name": "Robert Fleet"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1824-2361",
+      "@type": "Person",
+      "name": "Sam Hames"
+    },
+    {
+      "@id": "#SonyJufri",
+      "@type": "Person",
+      "name": "Sony Jufri"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4904-2941",
+      "@type": "Person",
+      "name": "Wolfgang Barth"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2118-3147",
+      "@type": "Person",
+      "name": "River Tae Smith"
+    },
+    {
+      "@id": "https://orcid.org/0009-0006-2241-3377",
+      "@type": "Person",
+      "name": "Rosanna Smith"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3237-9943",
+      "@type": "Person",
+      "name": "Simon Musgrave"
     },
     {
       "@id": "arcp://name,AnonymisingELANFiles",
@@ -975,12 +1137,177 @@
       "custom:additionalNotes": "You will need to provide structured data describing the edges and their weights in your network of interest"
     },
     {
+      "@id": "https://github.com/Supertyp/Anonymising_ELAN_files",
+      "@type": "SoftwareApplication",
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ldac/profile#SoftwareTool"
+        },
+        {
+          "@id": "object Object"
+        }
+      ],
+      "pcdm:memberOf": {
+        "@id": "./"
+      },
+      "name": "COOEE Notebook",
+      "input": {
+        "@id": "arcp://name,hdl10.26180~23961609"
+      },
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "encodingFormat": "application/x-ipynb+json",
+      "publisher": {
+        "@id": "https://ror.org/019wvm592"
+      },
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0006-2241-3377"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3237-9943"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2118-3147"
+        }
+      ],
+      "programmingLanguage": "Python",
+      "url": "https://github.com/Supertyp/Anonymising_ELAN_files",
+      "description": "A topic modeling notebook for the cooee collection",
+      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/cooee"
+    },
+    {
+      "@id": "arcp://name,hdl10.26180~23961609",
+      "name": "A COrpus of Oz Early English (COOEE)",
+      "@type": "RepositoryCollection"
+    },
+    {
+      "@id": "https://github.com/Australian-Text-Analytics-Platform/farms-to-freeways",
+      "@type": "SoftwareApplication",
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ldac/profile#SoftwareTool"
+        },
+        {
+          "@id": "object Object"
+        }
+      ],
+      "pcdm:memberOf": {
+        "@id": "./"
+      },
+      "name": "Farms to freeways notebook",
+      "input": {
+        "@id": "arcp://name,doi10.4225%2F35%2F555d661071c76"
+      },
+      "datePublished": "Sun Jul 07 2024 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "encodingFormat": "application/x-ipynb+json",
+      "publisher": {
+        "@id": "https://ror.org/019wvm592"
+      },
+      "author": "\"Mel Mistica\"",
+      "programmingLanguage": "Python",
+      "url": "https://github.com/Australian-Text-Analytics-Platform/farms-to-freeways",
+      "custom:dataFormat": "RO-Crate",
+      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/farms-to-freeways"
+    },
+    {
+      "@id": "arcp://name,doi10.4225%2F35%2F555d661071c76",
+      "name": "Farms to Freeways Example Dataset",
+      "@type": "RepositoryCollection"
+    },
+    {
+      "@id": "https://data.ldaca.edu.au/object?_id=https%3A%2F%2Fgithub.com%2FAustralian-Text-Analytics-Platform%2Fnotebook-ausreddit%2Fblob%2Fmain%2Fexploration.ipynb",
+      "@type": "SoftwareApplication",
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ldac/profile#SoftwareTool"
+        },
+        {
+          "@id": "object Object"
+        }
+      ],
+      "pcdm:memberOf": {
+        "@id": "./"
+      },
+      "name": "AusReddit Aggregate Data Explorer",
+      "input": {
+        "@id": "arcp://name,hdl10.25912~RDF_1754373503052"
+      },
+      "encodingFormat": "application/x-ipynb+json",
+      "publisher": [
+        {
+          "@id": "https://ror.org/03pnv4752"
+        },
+        {
+          "@id": "https://github.com/QUT-Digital-Observatory"
+        }
+      ],
+      "author": {
+        "@id": "https://orcid.org/0000-0003-2933-6627"
+      },
+      "programmingLanguage": "Python",
+      "url": "https://data.ldaca.edu.au/object?_id=https%3A%2F%2Fgithub.com%2FAustralian-Text-Analytics-Platform%2Fnotebook-ausreddit%2Fblob%2Fmain%2Fexploration.ipynb",
+      "description": "Allows researchers to explore and extract subsets of the AusReddit aggregated frequency data including word usage, ngram (phrase) usage, domains and hashtags over time.",
+      "custom:dataFormat": "parquet with specific schema",
+      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/notebook-ausreddit"
+    },
+    {
+      "@id": "arcp://name,hdl10.25912~RDF_1754373503052",
+      "name": "object Object",
+      "@type": "RepositoryCollection"
+    },
+    {
+      "@id": "https://data.ldaca.edu.au/object?_id=https%3A%2F%2Fgithub.com%2FAustralian-Text-Analytics-Platform%2Fnotebook-twittersphere%2Fblob%2Fmain%2Fexploration.ipynb",
+      "@type": "SoftwareApplication",
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ldac/profile#SoftwareTool"
+        },
+        {
+          "@id": "object Object"
+        }
+      ],
+      "pcdm:memberOf": {
+        "@id": "./"
+      },
+      "name": "Australian Twittersphere Aggregate Data Explorer",
+      "input": {
+        "@id": "arcp://name,hdl10.25912~RDF_1758591652309"
+      },
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "encodingFormat": "application/x-ipynb+json",
+      "publisher": [
+        {
+          "@id": "https://ror.org/03pnv4752"
+        },
+        {
+          "@id": "https://github.com/QUT-Digital-Observatory"
+        }
+      ],
+      "author": {
+        "@id": "https://orcid.org/0000-0003-2933-6627"
+      },
+      "programmingLanguage": "Python",
+      "url": "https://data.ldaca.edu.au/object?_id=https%3A%2F%2Fgithub.com%2FAustralian-Text-Analytics-Platform%2Fnotebook-twittersphere%2Fblob%2Fmain%2Fexploration.ipynb",
+      "description": "Allows researchers to explore and extract subsets of the Australian Twittersphere aggregated frequency data including word usage, ngram (phrase) usage, domains and hashtags over time.",
+      "custom:dataFormat": "parquet with specific schema",
+      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/notebook-twittersphere"
+    },
+    {
+      "@id": "arcp://name,hdl10.25912~RDF_1758591652309",
+      "name": "Australian Twittersphere (AuTS) aggregated data - Collection",
+      "@type": "RepositoryCollection"
+    },
+    {
+      "@id": "test_file.jpg",
+      "@type": "File"
+    },
+    {
       "@id": "additional-ro-crate-metadata.xlsx",
       "@type": "File",
       "name": "additional-ro-crate-metadata.xlsx",
       "description": "",
       "contentSize": 16253,
-      "dateModified": "2026-08-19T02:08:09Z",
+      "dateModified": "2026-08-19T02:36:29Z",
       "encodingFormat": [
         {
           "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/214"
