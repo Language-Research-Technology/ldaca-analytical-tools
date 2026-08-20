@@ -356,7 +356,16 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Collocation association measures",
       "custom:dataFormat": "txt",
-      "image": "images/collocation-calculator.png"
+      "image": {
+        "@id": "images/collocation-calculator.png"
+      }
+    },
+    {
+      "@id": "images/collocation-calculator.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,ConcordanceExplorer",
@@ -413,8 +422,17 @@
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/atap_widgets/blob/main/docs/concordance_help_pages.pdf",
       "creditText": "Bednarek, M., Mather, M., Maras, K., & Croser, H. (2023). ATAP Concordancer (v0.5.4) [Computer software]. https://github.com/Australian-Text-Analytics-Platform/atap_widgets. DOI. https://doi.org/10.5281/zenodo.10086731",
-      "image": "images/concordancer.png",
+      "image": {
+        "@id": "images/concordancer.png"
+      },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/atap_widgets"
+    },
+    {
+      "@id": "images/concordancer.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,Crate-O",
@@ -443,8 +461,17 @@
       "description": "Browser-based editor for RO Crates",
       "custom:dataFormat": "Various - text, video, audio, image, etc.",
       "custom:guideURL": "https://www.ldaca.edu.au/resources/user-guides/crate-o/",
-      "image": "images/crate-o.png",
+      "image": {
+        "@id": "images/crate-o.png"
+      },
       "custom:codeURL": "https://github.com/Language-Research-Technology/crate-o"
+    },
+    {
+      "@id": "images/crate-o.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,Discursis",
@@ -471,9 +498,18 @@
       "custom:dataFormat": "csv, xlsx",
       "custom:guideURL": "https://raw.githubusercontent.com/Australian-Text-Analytics-Platform/discursis/master/docs/Discursis%20User%20Guide.pdf",
       "creditText": "Not provided",
-      "image": "images/discursis.png",
+      "image": {
+        "@id": "images/discursis.png"
+      },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/discursis",
       "custom:additionalNotes": "Based on Angus et al"
+    },
+    {
+      "@id": "images/discursis.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,DocumentSimilarity",
@@ -508,8 +544,17 @@
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/document-similarity/blob/main/documents/docsim-help-pages.pdf",
       "creditText": "Jufri, Sony & Sun, Chao (2024). Document Similarity. v1.2. Australian Text Analytics Platform. Software. https://github.com/Australian-Text-Analytics-Platform/document-similarity",
-      "image": "images/document-similarity.png",
+      "image": {
+        "@id": "images/document-similarity.png"
+      },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/document-similarity"
+    },
+    {
+      "@id": "images/document-similarity.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,ELANAnnotationSplitter",
@@ -650,7 +695,16 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Batch rename plain-text files",
       "custom:dataFormat": "txt",
-      "image": "images/file-renamer.png"
+      "image": {
+        "@id": "images/file-renamer.png"
+      }
+    },
+    {
+      "@id": "images/file-renamer.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,ImageDatasetExplorer",
@@ -686,8 +740,17 @@
       "url": "https://github.com/Language-Research-Technology/image-dataset-explorer",
       "description": "Embeds images from a zip file using off the shelf image embeddings, then creates a static HTML visualisation for browsing/exploring clusters and relations",
       "custom:dataFormat": "zip archive with jpeg and/or png files",
-      "image": "images/image-dataset-explorer.png",
+      "image": {
+        "@id": "images/image-dataset-explorer.png"
+      },
       "custom:codeURL": "https://github.com/Language-Research-Technology/image-dataset-explorer"
+    },
+    {
+      "@id": "images/image-dataset-explorer.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,KeywordFinder",
@@ -742,7 +805,16 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Keyness analysis vs. a reference corpus",
       "custom:dataFormat": "txt",
-      "image": "images/keyword-extractor.png"
+      "image": {
+        "@id": "images/keyword-extractor.png"
+      }
+    },
+    {
+      "@id": "images/keyword-extractor.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,KeywordsAnalysis",
@@ -777,8 +849,17 @@
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/keywords-analysis/blob/main/documents/keywords_help_pages.pdf",
       "creditText": "Jufri, Sony & Sun, Chao (2022). Keywords Analysis. v1.0. Australian Text Analytics Platform. Software. https://github.com/Australian-Text-Analytics-Platform/keywords-analysis",
-      "image": "images/keyword-analysis.png",
+      "image": {
+        "@id": "images/keyword-analysis.png"
+      },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/keywords-analysis"
+    },
+    {
+      "@id": "images/keyword-analysis.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,Lameta",
@@ -808,8 +889,17 @@
       "custom:dataFormat": "Various - text, video, audio, image, ELAN annotation (eaf)",
       "custom:guideURL": "https://www.elararchive.org/uncategorized/SO_7557c4dd-1c83-485c-b95c-c0a292cfc42c/",
       "creditText": "object Object",
-      "image": "images/lameta.png",
+      "image": {
+        "@id": "images/lameta.png"
+      },
       "custom:codeURL": "https://github.com/onset/lameta"
+    },
+    {
+      "@id": "images/lameta.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,NetworkVisualiser",
@@ -892,7 +982,16 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Part-of-speech tagging & dependency parsing in 65+ languages",
       "custom:dataFormat": "txt",
-      "image": "images/pos-tagger.png"
+      "image": {
+        "@id": "images/pos-tagger.png"
+      }
+    },
+    {
+      "@id": "images/pos-tagger.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,QuotationTool",
@@ -927,8 +1026,17 @@
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/quotation-tool/blob/main/documents/quotation_help_pages.pdf",
       "creditText": "Jufri, Sony & Sun, Chao (2022). Quotation Tool. v1.0. Australian Text Analytics Platform. Software. https://github.com/Australian-Text-Analytics-Platform/quotation-tool",
-      "image": "images/quotation-tool.png",
+      "image": {
+        "@id": "images/quotation-tool.png"
+      },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/quotation-tool"
+    },
+    {
+      "@id": "images/quotation-tool.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,SemanticTaggerEnglish",
@@ -963,8 +1071,17 @@
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger/blob/main/documents/semtag_help_pages.pdf",
       "creditText": "object Object",
-      "image": "images/semantic-tagger.png",
+      "image": {
+        "@id": "images/semantic-tagger.png"
+      },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger"
+    },
+    {
+      "@id": "images/semantic-tagger.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,SentimentExplorer",
@@ -994,6 +1111,13 @@
       "custom:dataFormat": "txt"
     },
     {
+      "@id": "images/sentiment-explorer.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
       "@id": "arcp://name,TextCleaner",
       "@type": "SoftwareApplication",
       "conformsTo": {
@@ -1019,7 +1143,16 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Remove and replace text elements with regex",
       "custom:dataFormat": "txt",
-      "image": "images/text-cleaner.png"
+      "image": {
+        "@id": "images/text-cleaner.png"
+      }
+    },
+    {
+      "@id": "images/text-cleaner.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,TopicExplorer",
@@ -1074,7 +1207,16 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Unsupervised & seeded LDA topic modelling",
       "custom:dataFormat": "txt",
-      "image": "images/topic-detector.png"
+      "image": {
+        "@id": "images/topic-detector.png"
+      }
+    },
+    {
+      "@id": "images/topic-detector.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,WordFinder",
@@ -1102,7 +1244,16 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Keyword-in-context concordancing",
       "custom:dataFormat": "txt",
-      "image": "images/word-finder.png"
+      "image": {
+        "@id": "images/word-finder.png"
+      }
+    },
+    {
+      "@id": "images/word-finder.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "arcp://name,WordWebber",
@@ -1130,8 +1281,17 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Word co-occurrence network visualisation",
       "custom:dataFormat": "xlsx",
-      "image": "images/word-webber.png",
+      "image": {
+        "@id": "images/word-webber.png"
+      },
       "custom:additionalNotes": "You will need to provide structured data describing the edges and their weights in your network of interest"
+    },
+    {
+      "@id": "images/word-webber.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     },
     {
       "@id": "https://data.ldaca.edu.au/object?_id=https://github.com/Australian-Text-Analytics-Platform/cooee/blob/main/cooee.ipynb",
@@ -1293,132 +1453,6 @@
       "@id": "arcp://name,hdl10.25912~RDF_1758591652309",
       "name": "Australian Twittersphere (AuTS) aggregated data - Collection",
       "@type": "RepositoryCollection"
-    },
-    {
-      "@id": "images/collocation-calculator.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/concordancer.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/crate-o.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/discursis.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/document-similarity.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/file-renamer.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/image-dataset-explorer.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/keyword-analysis.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/keyword-extractor.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/lameta.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/pos-tagger.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/quotation-tool.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/semantic-tagger.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/sentiment-explorer.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/text-cleaner.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/topic-detector.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/word-finder.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
-    },
-    {
-      "@id": "images/word-webber.png",
-      "@type": "File",
-      "isPartOf": {
-        "@id": "./"
-      }
     }
   ]
 }
