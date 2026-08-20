@@ -137,7 +137,13 @@
           "@id": "arcp://name,SentimentExplorer"
         },
         {
+          "@id": "arcp://name,SentimentExplorerbrowser-based"
+        },
+        {
           "@id": "arcp://name,TextCleaner"
+        },
+        {
+          "@id": "arcp://name,TextCleanerbrowser-based"
         },
         {
           "@id": "arcp://name,TopicExplorer"
@@ -1092,7 +1098,34 @@
       "pcdm:memberOf": {
         "@id": "./"
       },
-      "name": "SentimentExplorer",
+      "name": "Sentiment Explorer",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "publisher": [
+        {
+          "@id": "https://ror.org/00rqy9422"
+        },
+        {
+          "@id": "https://github.com/SLCLADAL/ladal"
+        }
+      ],
+      "author": {
+        "@id": "https://orcid.org/0000-0003-1923-9153"
+      },
+      "programmingLanguage": "R",
+      "url": "https://ladal.edu.au/tools.html#jupyter-tools",
+      "description": "Allows you to perform a sentiment analysis on your texts and download the results in an MS Excel spreadsheet.",
+      "custom:dataFormat": "txt"
+    },
+    {
+      "@id": "arcp://name,SentimentExplorerbrowser-based",
+      "@type": "SoftwareApplication",
+      "conformsTo": {
+        "@id": "https://w3id.org/ldac/profile#SoftwareTool"
+      },
+      "pcdm:memberOf": {
+        "@id": "./"
+      },
+      "name": "Sentiment Explorer (browser-based)",
       "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
@@ -1108,7 +1141,10 @@
       "programmingLanguage": "Browser-based",
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "NRC word-emotion sentiment analysis",
-      "custom:dataFormat": "txt"
+      "custom:dataFormat": "txt",
+      "image": {
+        "@id": "images/sentiment-explorer.png"
+      }
     },
     {
       "@id": "images/sentiment-explorer.png",
@@ -1126,7 +1162,34 @@
       "pcdm:memberOf": {
         "@id": "./"
       },
-      "name": "TextCleaner",
+      "name": "Text Cleaner",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "publisher": [
+        {
+          "@id": "https://ror.org/00rqy9422"
+        },
+        {
+          "@id": "https://github.com/SLCLADAL/ladal"
+        }
+      ],
+      "author": {
+        "@id": "https://orcid.org/0000-0003-1923-9153"
+      },
+      "programmingLanguage": "R",
+      "url": "https://ladal.edu.au/tools.html#jupyter-tools",
+      "description": "Allows you to remove and replace words, tags, and other elements from the text data that you upload (of course you can then download the cleaned texts too)",
+      "custom:dataFormat": "txt"
+    },
+    {
+      "@id": "arcp://name,TextCleanerbrowser-based",
+      "@type": "SoftwareApplication",
+      "conformsTo": {
+        "@id": "https://w3id.org/ldac/profile#SoftwareTool"
+      },
+      "pcdm:memberOf": {
+        "@id": "./"
+      },
+      "name": "TextCleaner (browser-based)",
       "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
