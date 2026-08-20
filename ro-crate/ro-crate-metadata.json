@@ -48,7 +48,7 @@
       "name": "LDaCA Tools Catalogue",
       "description": "This is a collection listing all the LDaCA tools.",
       "ldac:doi": "",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "inLanguage": "English",
       "ldac:metadataIsPublic": true,
       "author": {
@@ -152,7 +152,7 @@
           "@id": "arcp://name,WordWebber"
         },
         {
-          "@id": "https://github.com/Supertyp/Anonymising_ELAN_files"
+          "@id": "https://data.ldaca.edu.au/object?_id=https://github.com/Australian-Text-Analytics-Platform/cooee/blob/main/cooee.ipynb"
         },
         {
           "@id": "https://github.com/Australian-Text-Analytics-Platform/farms-to-freeways"
@@ -290,7 +290,7 @@
         "@id": "./"
       },
       "name": "Anonymising ELAN Files",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -313,7 +313,7 @@
         "@id": "./"
       },
       "name": "Collocation Analyser",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -328,8 +328,7 @@
       "programmingLanguage": "R",
       "url": "https://ladal.edu.au/tools.html#jupyter-tools",
       "description": "Calculates various association measures (collocation statistics) based on textual input and allows you to download the resulting table",
-      "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#collocation-analyser"
+      "custom:dataFormat": "txt"
     },
     {
       "@id": "arcp://name,CollocationCalculator",
@@ -341,7 +340,7 @@
         "@id": "./"
       },
       "name": "CollocationCalculator",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -357,7 +356,7 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Collocation association measures",
       "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#collocationcalculator"
+      "image": "images/collocation-calculator.png"
     },
     {
       "@id": "arcp://name,ConcordanceExplorer",
@@ -369,7 +368,7 @@
         "@id": "./"
       },
       "name": "Concordance Explorer",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -384,8 +383,7 @@
       "programmingLanguage": "R",
       "url": "https://ladal.edu.au/tools.html#jupyter-tools",
       "description": "Create Keyword-in-Context displays of words or phrases in a single text or collection of texts and to download the resulting table",
-      "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#concordance-explorer"
+      "custom:dataFormat": "txt"
     },
     {
       "@id": "arcp://name,Concordancer",
@@ -397,7 +395,7 @@
         "@id": "./"
       },
       "name": "Concordancer",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -415,6 +413,7 @@
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/atap_widgets/blob/main/docs/concordance_help_pages.pdf",
       "creditText": "Bednarek, M., Mather, M., Maras, K., & Croser, H. (2023). ATAP Concordancer (v0.5.4) [Computer software]. https://github.com/Australian-Text-Analytics-Platform/atap_widgets. DOI. https://doi.org/10.5281/zenodo.10086731",
+      "image": "images/concordancer.png",
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/atap_widgets"
     },
     {
@@ -427,7 +426,7 @@
         "@id": "./"
       },
       "name": "Crate-O",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -444,6 +443,7 @@
       "description": "Browser-based editor for RO Crates",
       "custom:dataFormat": "Various - text, video, audio, image, etc.",
       "custom:guideURL": "https://www.ldaca.edu.au/resources/user-guides/crate-o/",
+      "image": "images/crate-o.png",
       "custom:codeURL": "https://github.com/Language-Research-Technology/crate-o"
     },
     {
@@ -456,7 +456,7 @@
         "@id": "./"
       },
       "name": "Discursis",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -471,6 +471,7 @@
       "custom:dataFormat": "csv, xlsx",
       "custom:guideURL": "https://raw.githubusercontent.com/Australian-Text-Analytics-Platform/discursis/master/docs/Discursis%20User%20Guide.pdf",
       "creditText": "Not provided",
+      "image": "images/discursis.png",
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/discursis",
       "custom:additionalNotes": "Based on Angus et al"
     },
@@ -484,7 +485,7 @@
         "@id": "./"
       },
       "name": "Document Similarity",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -507,6 +508,7 @@
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/document-similarity/blob/main/documents/docsim-help-pages.pdf",
       "creditText": "Jufri, Sony & Sun, Chao (2024). Document Similarity. v1.2. Australian Text Analytics Platform. Software. https://github.com/Australian-Text-Analytics-Platform/document-similarity",
+      "image": "images/document-similarity.png",
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/document-similarity"
     },
     {
@@ -519,7 +521,7 @@
         "@id": "./"
       },
       "name": "ELAN Annotation Splitter",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -542,7 +544,7 @@
         "@id": "./"
       },
       "name": "ELAN Audio Segmentation",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -565,7 +567,7 @@
         "@id": "./"
       },
       "name": "ELAN Commander",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -575,8 +577,7 @@
       "programmingLanguage": "Browser-based",
       "url": "https://www.gerlingo.com/ELAN_commander.html",
       "description": "Web application to find unwanted characters in annotations",
-      "custom:dataFormat": "eaf (ELAN file)",
-      "custom:codeURL": "https://www.gerlingo.com/ELAN_commander.html"
+      "custom:dataFormat": "eaf (ELAN file)"
     },
     {
       "@id": "arcp://name,ELANInventory",
@@ -588,7 +589,7 @@
         "@id": "./"
       },
       "name": "ELAN Inventory",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -598,8 +599,7 @@
       "programmingLanguage": "Browser-based",
       "url": "https://www.gerlingo.com/config_maker.html",
       "description": "Web application to access the inventory of a transcription collection and to create config files to load a collection into ANNIS",
-      "custom:dataFormat": "eaf (ELAN file)",
-      "custom:codeURL": "https://www.gerlingo.com/config_maker.html"
+      "custom:dataFormat": "eaf (ELAN file)"
     },
     {
       "@id": "arcp://name,ELANReplacer",
@@ -611,7 +611,7 @@
         "@id": "./"
       },
       "name": "ELAN Replacer",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
       },
@@ -634,7 +634,7 @@
         "@id": "./"
       },
       "name": "FileRenamer",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -650,7 +650,7 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Batch rename plain-text files",
       "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#filerenamer"
+      "image": "images/file-renamer.png"
     },
     {
       "@id": "arcp://name,ImageDatasetExplorer",
@@ -662,7 +662,7 @@
         "@id": "./"
       },
       "name": "Image Dataset Explorer",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -686,6 +686,7 @@
       "url": "https://github.com/Language-Research-Technology/image-dataset-explorer",
       "description": "Embeds images from a zip file using off the shelf image embeddings, then creates a static HTML visualisation for browsing/exploring clusters and relations",
       "custom:dataFormat": "zip archive with jpeg and/or png files",
+      "image": "images/image-dataset-explorer.png",
       "custom:codeURL": "https://github.com/Language-Research-Technology/image-dataset-explorer"
     },
     {
@@ -698,7 +699,7 @@
         "@id": "./"
       },
       "name": "Keyword Finder",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -713,8 +714,7 @@
       "programmingLanguage": "R",
       "url": "https://ladal.edu.au/tools.html#jupyter-tools",
       "description": "Calculates various keyness measures describing how words are over or under-represented in the texts you provide, compared to your chosen reference text corpus",
-      "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#keyword-finder"
+      "custom:dataFormat": "txt"
     },
     {
       "@id": "arcp://name,KeywordExtractor",
@@ -726,7 +726,7 @@
         "@id": "./"
       },
       "name": "KeywordExtractor",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -742,7 +742,7 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Keyness analysis vs. a reference corpus",
       "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#keywordextractor"
+      "image": "images/keyword-extractor.png"
     },
     {
       "@id": "arcp://name,KeywordsAnalysis",
@@ -754,7 +754,7 @@
         "@id": "./"
       },
       "name": "Keywords Analysis",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -777,6 +777,7 @@
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/keywords-analysis/blob/main/documents/keywords_help_pages.pdf",
       "creditText": "Jufri, Sony & Sun, Chao (2022). Keywords Analysis. v1.0. Australian Text Analytics Platform. Software. https://github.com/Australian-Text-Analytics-Platform/keywords-analysis",
+      "image": "images/keyword-analysis.png",
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/keywords-analysis"
     },
     {
@@ -789,7 +790,7 @@
         "@id": "./"
       },
       "name": "Lameta",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": {
         "@id": "https://ror.org/01ej9dk98"
       },
@@ -802,11 +803,12 @@
         }
       ],
       "programmingLanguage": "Software program",
-      "url": "object Object",
+      "url": "https://lameta.org",
       "description": "Lameta is a metadata tool to help with organising collections of files. It is mainly aimed at collections made in the course of documenting language, music, and other cultural expressions.\nLameta greatly simplifies management of collections and makes the archiving process straightforward and painless for field workers.",
       "custom:dataFormat": "Various - text, video, audio, image, ELAN annotation (eaf)",
       "custom:guideURL": "https://www.elararchive.org/uncategorized/SO_7557c4dd-1c83-485c-b95c-c0a292cfc42c/",
       "creditText": "object Object",
+      "image": "images/lameta.png",
       "custom:codeURL": "https://github.com/onset/lameta"
     },
     {
@@ -819,7 +821,7 @@
         "@id": "./"
       },
       "name": "Network Visualiser",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -835,7 +837,6 @@
       "url": "https://ladal.edu.au/tools.html#jupyter-tools",
       "description": "Allows you to generate and download network graphs based on your data",
       "custom:dataFormat": "xlsx",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#network-visualiser",
       "custom:additionalNotes": "You will need to provide structured data describing the edges and their weights in your network of interest"
     },
     {
@@ -848,7 +849,7 @@
         "@id": "./"
       },
       "name": "Part-of-Speech Tagger",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -863,8 +864,7 @@
       "programmingLanguage": "R",
       "url": "https://ladal.edu.au/tools.html#jupyter-tools",
       "description": "Add part-of-speech tags to texts or collections of texts in more than 60 languages and download the resulting pos-tagged texts",
-      "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#part-of-speech-tagger"
+      "custom:dataFormat": "txt"
     },
     {
       "@id": "arcp://name,POSTagger",
@@ -876,7 +876,7 @@
         "@id": "./"
       },
       "name": "POSTagger",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -892,7 +892,7 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Part-of-speech tagging & dependency parsing in 65+ languages",
       "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#postagger"
+      "image": "images/pos-tagger.png"
     },
     {
       "@id": "arcp://name,QuotationTool",
@@ -904,7 +904,7 @@
         "@id": "./"
       },
       "name": "Quotation Tool",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -927,6 +927,7 @@
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/quotation-tool/blob/main/documents/quotation_help_pages.pdf",
       "creditText": "Jufri, Sony & Sun, Chao (2022). Quotation Tool. v1.0. Australian Text Analytics Platform. Software. https://github.com/Australian-Text-Analytics-Platform/quotation-tool",
+      "image": "images/quotation-tool.png",
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/quotation-tool"
     },
     {
@@ -939,7 +940,7 @@
         "@id": "./"
       },
       "name": "Semantic Tagger (English)",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/0384j8v12"
@@ -962,6 +963,7 @@
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger/blob/main/documents/semtag_help_pages.pdf",
       "creditText": "object Object",
+      "image": "images/semantic-tagger.png",
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger"
     },
     {
@@ -974,7 +976,7 @@
         "@id": "./"
       },
       "name": "SentimentExplorer",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -989,8 +991,7 @@
       "programmingLanguage": "Browser-based",
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "NRC word-emotion sentiment analysis",
-      "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#sentimentexplorer"
+      "custom:dataFormat": "txt"
     },
     {
       "@id": "arcp://name,TextCleaner",
@@ -1002,7 +1003,7 @@
         "@id": "./"
       },
       "name": "TextCleaner",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -1018,7 +1019,7 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Remove and replace text elements with regex",
       "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#textcleaner"
+      "image": "images/text-cleaner.png"
     },
     {
       "@id": "arcp://name,TopicExplorer",
@@ -1030,7 +1031,7 @@
         "@id": "./"
       },
       "name": "Topic Explorer",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -1045,8 +1046,7 @@
       "programmingLanguage": "R",
       "url": "https://ladal.edu.au/tools.html#jupyter-tools",
       "description": "Allows you to generate your own custom topic models using unsupervised and supervised LDA and download the results in an MS Excel spreadsheet",
-      "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#topic-explorer"
+      "custom:dataFormat": "txt"
     },
     {
       "@id": "arcp://name,TopicDetector",
@@ -1058,7 +1058,7 @@
         "@id": "./"
       },
       "name": "TopicDetector",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -1074,7 +1074,7 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Unsupervised & seeded LDA topic modelling",
       "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#topicdetector"
+      "image": "images/topic-detector.png"
     },
     {
       "@id": "arcp://name,WordFinder",
@@ -1086,7 +1086,7 @@
         "@id": "./"
       },
       "name": "WordFinder",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -1102,7 +1102,7 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Keyword-in-context concordancing",
       "custom:dataFormat": "txt",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#wordfinder"
+      "image": "images/word-finder.png"
     },
     {
       "@id": "arcp://name,WordWebber",
@@ -1114,7 +1114,7 @@
         "@id": "./"
       },
       "name": "WordWebber",
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "publisher": [
         {
           "@id": "https://ror.org/00rqy9422"
@@ -1130,11 +1130,11 @@
       "url": "https://ladal.edu.au/tools.html#shiny-tools",
       "description": "Word co-occurrence network visualisation",
       "custom:dataFormat": "xlsx",
-      "custom:codeURL": "https://ladal.edu.au/tools.html#wordwebber",
+      "image": "images/word-webber.png",
       "custom:additionalNotes": "You will need to provide structured data describing the edges and their weights in your network of interest"
     },
     {
-      "@id": "https://github.com/Supertyp/Anonymising_ELAN_files",
+      "@id": "https://data.ldaca.edu.au/object?_id=https://github.com/Australian-Text-Analytics-Platform/cooee/blob/main/cooee.ipynb",
       "@type": "SoftwareApplication",
       "conformsTo": [
         {
@@ -1151,7 +1151,7 @@
       "input": {
         "@id": "arcp://name,hdl10.26180~23961609"
       },
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "encodingFormat": "application/x-ipynb+json",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
@@ -1168,7 +1168,7 @@
         }
       ],
       "programmingLanguage": "Python",
-      "url": "https://github.com/Supertyp/Anonymising_ELAN_files",
+      "url": "https://data.ldaca.edu.au/object?_id=https://github.com/Australian-Text-Analytics-Platform/cooee/blob/main/cooee.ipynb",
       "description": "A topic modeling notebook for the cooee collection",
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/cooee"
     },
@@ -1195,7 +1195,7 @@
       "input": {
         "@id": "arcp://name,doi10.4225%2F35%2F555d661071c76"
       },
-      "datePublished": "Sun Jul 07 2024 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sun Jul 07 2024 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "encodingFormat": "application/x-ipynb+json",
       "publisher": {
         "@id": "https://ror.org/019wvm592"
@@ -1270,7 +1270,7 @@
       "input": {
         "@id": "arcp://name,hdl10.25912~RDF_1758591652309"
       },
-      "datePublished": "Sat Apr 11 2026 10:00:00 GMT+1000 (Australian Eastern Standard Time)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
       "encodingFormat": "application/x-ipynb+json",
       "publisher": [
         {
@@ -1295,8 +1295,130 @@
       "@type": "RepositoryCollection"
     },
     {
-      "@id": "test_file.jpg",
-      "@type": "File"
+      "@id": "images/collocation-calculator.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/concordancer.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/crate-o.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/discursis.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/document-similarity.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/file-renamer.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/image-dataset-explorer.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/keyword-analysis.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/keyword-extractor.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/lameta.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/pos-tagger.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/quotation-tool.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/semantic-tagger.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/sentiment-explorer.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/text-cleaner.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/topic-detector.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/word-finder.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "images/word-webber.png",
+      "@type": "File",
+      "isPartOf": {
+        "@id": "./"
+      }
     }
   ]
 }
