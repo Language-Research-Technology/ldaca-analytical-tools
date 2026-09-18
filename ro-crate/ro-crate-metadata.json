@@ -158,6 +158,12 @@
           "@id": "arcp://name,WordWebber"
         },
         {
+          "@id": "arcp://name,TopSBM"
+        },
+        {
+          "@id": "arcp://name,SemanticTaggermultilingual"
+        },
+        {
           "@id": "https://data.ldaca.edu.au/object?_id=https://github.com/Australian-Text-Analytics-Platform/cooee/blob/main/cooee.ipynb"
         },
         {
@@ -503,7 +509,7 @@
       "description": "A conversational analysis and visualisation tool",
       "custom:dataFormat": "csv, xlsx",
       "custom:guideURL": "https://raw.githubusercontent.com/Australian-Text-Analytics-Platform/discursis/master/docs/Discursis%20User%20Guide.pdf",
-      "creditText": "Not provided",
+      "creditText": "object Object",
       "image": {
         "@id": "images/discursis.png"
       },
@@ -1076,7 +1082,7 @@
       "description": "Used to tag a text/corpus so you can extract token level semantic tags from the tagged texts",
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger/blob/main/documents/semtag_help_pages.pdf",
-      "creditText": "object Object",
+      "creditText": "Jufri, Sony & Sun, Chao (2022). Semantic Tagger. v1.0. Australian Text Analytics Platform. Software. https://github.com/Australian-Text-Analytics-Platform/semantic-tagger",
       "image": {
         "@id": "images/semantic-tagger.png"
       },
@@ -1355,6 +1361,68 @@
       "isPartOf": {
         "@id": "./"
       }
+    },
+    {
+      "@id": "arcp://name,TopSBM",
+      "@type": "SoftwareApplication",
+      "conformsTo": {
+        "@id": "https://w3id.org/ldac/profile#SoftwareTool"
+      },
+      "pcdm:memberOf": {
+        "@id": "./"
+      },
+      "name": "TopSBM",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "publisher": [
+        {
+          "@id": "https://ror.org/0384j8v12"
+        },
+        {
+          "@id": "https://github.com/Sydney-Informatics-Hub"
+        }
+      ],
+      "author": {
+        "@id": "https://orcid.org/0000-0002-1428-2649"
+      },
+      "programmingLanguage": "Python",
+      "url": "https://github.com/Australian-Text-Analytics-Platform/topsbm",
+      "description": "Topic modelling approach that infers a hierarchy of topic clusters and word clusters in your Corpus in a non-parametric manner by leveraging stochastic block models.",
+      "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
+      "creditText": "object Object"
+    },
+    {
+      "@id": "arcp://name,SemanticTaggermultilingual",
+      "@type": "SoftwareApplication",
+      "conformsTo": {
+        "@id": "https://w3id.org/ldac/profile#SoftwareTool"
+      },
+      "pcdm:memberOf": {
+        "@id": "./"
+      },
+      "name": "Semantic Tagger (multilingual)",
+      "datePublished": "Sat Apr 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)",
+      "publisher": [
+        {
+          "@id": "https://ror.org/0384j8v12"
+        },
+        {
+          "@id": "https://github.com/Sydney-Informatics-Hub"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#SonyJufri"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1428-2649"
+        }
+      ],
+      "programmingLanguage": "Python",
+      "url": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger/tree/multi-lingual",
+      "description": "With the multilingual Semantic Tagger, you can use Python Multilingual Ucrel Semantic Analysis System (PyMUSAS) to tag your text so you can extract token level semantic tags from the tagged text. Supports Chinese, Italian and Spanish languages.",
+      "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
+      "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger/blob/multi-lingual/documents/semtag_help_pages.pdf",
+      "creditText": "object Object"
     },
     {
       "@id": "https://data.ldaca.edu.au/object?_id=https://github.com/Australian-Text-Analytics-Platform/cooee/blob/main/cooee.ipynb",
