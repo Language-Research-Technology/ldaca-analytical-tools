@@ -293,6 +293,11 @@
       "name": "Simon Musgrave"
     },
     {
+      "@id": "#HuenHeiChan",
+      "@type": "Person",
+      "name": "Huen Hei (Jack) Chan"
+    },
+    {
       "@id": "arcp://name,AnonymisingELANFiles",
       "@type": "SoftwareApplication",
       "conformsTo": {
@@ -1381,9 +1386,14 @@
           "@id": "https://github.com/Sydney-Informatics-Hub"
         }
       ],
-      "author": {
-        "@id": "https://orcid.org/0000-0002-1428-2649"
-      },
+      "author": [
+        {
+          "@id": "#HuenHeiChan"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1932-3710"
+        }
+      ],
       "programmingLanguage": "Python",
       "url": "https://github.com/Australian-Text-Analytics-Platform/topsbm",
       "description": "Topic modelling approach that infers a hierarchy of topic clusters and word clusters in your Corpus in a non-parametric manner by leveraging stochastic block models.",
