@@ -223,6 +223,11 @@
       "name": "Centre for Digital Cultures & Societies"
     },
     {
+      "@id": "https://sydneycorpuslab.com/",
+      "@type": "Organization",
+      "name": "Sydney Corpus Lab"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-1428-2649",
       "@type": "Person",
       "name": "Chao Sun"
@@ -301,6 +306,21 @@
       "@id": "https://orcid.org/0000-0002-1932-3710",
       "@type": "Person",
       "name": "Eduardo G. Altmann"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7819-5424",
+      "@type": "Person",
+      "name": "Monika Bednarek"
+    },
+    {
+      "@id": "#HamishCroser",
+      "@type": "Person",
+      "name": "Hamish Croser"
+    },
+    {
+      "@id": "#KristianMaras",
+      "@type": "Person",
+      "name": "Kristian Maras"
     },
     {
       "@id": "arcp://name,AnonymisingELANFiles",
@@ -433,11 +453,25 @@
         },
         {
           "@id": "https://github.com/Sydney-Informatics-Hub"
+        },
+        {
+          "@id": "https://sydneycorpuslab.com/"
         }
       ],
-      "author": {
-        "@id": "https://orcid.org/0000-0002-3616-6235"
-      },
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7819-5424"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3616-6235"
+        },
+        {
+          "@id": "#KristianMaras"
+        },
+        {
+          "@id": "#HamishCroser"
+        }
+      ],
       "programmingLanguage": "Python",
       "url": "https://github.com/Australian-Text-Analytics-Platform/atap_widgets",
       "description": "A concordancer that demos how to analyse turn-taking pairs in a concordancer",
@@ -519,12 +553,11 @@
       "description": "A conversational analysis and visualisation tool",
       "custom:dataFormat": "csv, xlsx",
       "custom:guideURL": "https://raw.githubusercontent.com/Australian-Text-Analytics-Platform/discursis/master/docs/Discursis%20User%20Guide.pdf",
-      "creditText": "object Object",
       "image": {
         "@id": "images/discursis.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/discursis",
-      "custom:additionalNotes": "Based on Angus et al"
+      "custom:additionalNotes": "object Object"
     },
     {
       "@id": "images/discursis.png",
@@ -550,6 +583,9 @@
         },
         {
           "@id": "https://github.com/Sydney-Informatics-Hub"
+        },
+        {
+          "@id": "https://sydneycorpuslab.com/"
         }
       ],
       "author": [
@@ -855,6 +891,9 @@
         },
         {
           "@id": "https://github.com/Sydney-Informatics-Hub"
+        },
+        {
+          "@id": "https://sydneycorpuslab.com/"
         }
       ],
       "author": [
@@ -1032,6 +1071,9 @@
         },
         {
           "@id": "https://github.com/Sydney-Informatics-Hub"
+        },
+        {
+          "@id": "https://sydneycorpuslab.com/"
         }
       ],
       "author": [
@@ -1077,6 +1119,9 @@
         },
         {
           "@id": "https://github.com/Sydney-Informatics-Hub"
+        },
+        {
+          "@id": "https://sydneycorpuslab.com/"
         }
       ],
       "author": [
@@ -1389,6 +1434,9 @@
         },
         {
           "@id": "https://github.com/Sydney-Informatics-Hub"
+        },
+        {
+          "@id": "https://sydneycorpuslab.com/"
         }
       ],
       "author": [
@@ -1422,6 +1470,9 @@
         },
         {
           "@id": "https://github.com/Sydney-Informatics-Hub"
+        },
+        {
+          "@id": "https://sydneycorpuslab.com/"
         }
       ],
       "author": [
