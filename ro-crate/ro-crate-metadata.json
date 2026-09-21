@@ -557,7 +557,7 @@
         "@id": "images/discursis.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/discursis",
-      "custom:additionalNotes": "object Object"
+      "custom:additionalNotes": "Based on Angus, D., Smith, A. E., & Wiles, J. (2012). Human Communication as Coupled Time Series: Quantifying Multi-Participant Recurrence. IEEE Transactions on Audio, Speech, and Language Processing, 20(6), 1795–1807. https://doi.org/10.1109/TASL.2012.2189566"
     },
     {
       "@id": "images/discursis.png",
