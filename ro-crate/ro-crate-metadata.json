@@ -915,7 +915,7 @@
         "@id": "images/keyword-analysis.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/keywords-analysis",
-      "custom:additionalNotes": "object Object"
+      "custom:additionalNotes": "Read more about the Keyword Analysis tool on the LDaCA blog."
     },
     {
       "@id": "images/keyword-analysis.png",
@@ -1096,7 +1096,7 @@
         "@id": "images/quotation-tool.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/quotation-tool",
-      "custom:additionalNotes": "object Object"
+      "custom:additionalNotes": "Read more about the Quotation Tool on the LDaCA blog."
     },
     {
       "@id": "images/quotation-tool.png",
@@ -1145,7 +1145,7 @@
         "@id": "images/semantic-tagger.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger",
-      "custom:additionalNotes": "object Object"
+      "custom:additionalNotes": "Read more about the Semantic Tagger on the LDaCA blog."
     },
     {
       "@id": "images/semantic-tagger.png",
@@ -1610,7 +1610,7 @@
     },
     {
       "@id": "arcp://name,hdl10.25912~RDF_1754373503052",
-      "name": "object Object",
+      "name": "AusReddit aggregated data - Collection",
       "@type": "RepositoryCollection"
     },
     {
