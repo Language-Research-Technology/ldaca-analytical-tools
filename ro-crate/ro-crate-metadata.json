@@ -557,7 +557,7 @@
         "@id": "images/discursis.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/discursis",
-      "custom:additionalNotes": "object Object"
+      "custom:additionalNotes": "Based on Angus, D., Smith, A. E., & Wiles, J. (2012). Human Communication as Coupled Time Series: Quantifying Multi-Participant Recurrence. IEEE Transactions on Audio, Speech, and Language Processing, 20(6), 1795–1807. https://doi.org/10.1109/TASL.2012.2189566"
     },
     {
       "@id": "images/discursis.png",
@@ -601,7 +601,7 @@
       "description": "Identifies identical and similar text in a corpus",
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/document-similarity/blob/main/documents/docsim-help-pages.pdf",
-      "creditText": "Jufri, Sony & Sun, Chao (2024). Document Similarity. v1.2. Australian Text Analytics Platform. Software. https://github.com/Australian-Text-Analytics-Platform/document-similarity",
+      "creditText": "object Object",
       "image": {
         "@id": "images/document-similarity.png"
       },
