@@ -601,7 +601,7 @@
       "description": "Identifies identical and similar text in a corpus",
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/document-similarity/blob/main/documents/docsim-help-pages.pdf",
-      "creditText": "object Object",
+      "creditText": "Jufri, Sony & Sun, Chao (2024). Document Similarity. v1.2. Australian Text Analytics Platform. Software. https://github.com/Australian-Text-Analytics-Platform/document-similarity",
       "image": {
         "@id": "images/document-similarity.png"
       },
@@ -951,7 +951,7 @@
       "description": "Lameta is a metadata tool to help with organising collections of files. It is mainly aimed at collections made in the course of documenting language, music, and other cultural expressions.\nLameta greatly simplifies management of collections and makes the archiving process straightforward and painless for field workers.",
       "custom:dataFormat": "Various - text, video, audio, image, ELAN annotation (eaf)",
       "custom:guideURL": "https://www.elararchive.org/uncategorized/SO_7557c4dd-1c83-485c-b95c-c0a292cfc42c/",
-      "creditText": "object Object",
+      "creditText": "Hatton, John, Gary Holton, Mandana Seyfeddinipur, Nick Thieberger. 2021. Lameta [software] https://github.com/onset/laMETA/releases",
       "image": {
         "@id": "images/lameta.png"
       },
@@ -1455,7 +1455,7 @@
       "url": "https://github.com/Australian-Text-Analytics-Platform/topsbm",
       "description": "Topic modelling approach that infers a hierarchy of topic clusters and word clusters in your Corpus in a non-parametric manner by leveraging stochastic block models.",
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
-      "creditText": "object Object"
+      "creditText": "Chan, Huen Hei & Altmann, Eduardo G. (2024) TopSBM. v1.0. Australian Text Analytics Platform. Software. https://github.com/Australian-Text-Analytics-Platform/topsbm"
     },
     {
       "@id": "arcp://name,SemanticTaggermultilingual",
@@ -1492,7 +1492,7 @@
       "description": "With the multilingual Semantic Tagger, you can use Python Multilingual Ucrel Semantic Analysis System (PyMUSAS) to tag your text so you can extract token level semantic tags from the tagged text. Supports Chinese, Italian and Spanish languages.",
       "custom:dataFormat": "csv, xlsx, plain txt; also zip archive with the supported file formats",
       "custom:guideURL": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger/blob/multi-lingual/documents/semtag_help_pages.pdf",
-      "creditText": "object Object"
+      "creditText": "Jufri, Sony & Sun, Chao (2022). Semantic Tagger (Multi-Lingual). v1.0. Australian Text Analytics Platform. Software. https://github.com/Australian-Text-Analytics-Platform/semantic-tagger/tree/multi-lingual"
     },
     {
       "@id": "https://data.ldaca.edu.au/object?_id=https://github.com/Australian-Text-Analytics-Platform/cooee/blob/main/cooee.ipynb",
