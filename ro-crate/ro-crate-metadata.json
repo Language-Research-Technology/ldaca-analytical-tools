@@ -215,7 +215,7 @@
     {
       "@id": "https://github.com/SLCLADAL/ladal",
       "@type": "Organization",
-      "name": "Language Technology and Data Analysis Laboratory"
+      "name": "Language Technology and Data Analysis Laboratory (LADAL)"
     },
     {
       "@id": "https://hass.uq.edu.au/centre-digital-cultures-societies",
@@ -557,7 +557,7 @@
         "@id": "images/discursis.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/discursis",
-      "custom:additionalNotes": "Based on Angus, D., Smith, A. E., & Wiles, J. (2012). Human Communication as Coupled Time Series: Quantifying Multi-Participant Recurrence. IEEE Transactions on Audio, Speech, and Language Processing, 20(6), 1795–1807. https://doi.org/10.1109/TASL.2012.2189566"
+      "custom:additionalNotes": "object Object"
     },
     {
       "@id": "images/discursis.png",
@@ -605,7 +605,8 @@
       "image": {
         "@id": "images/document-similarity.png"
       },
-      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/document-similarity"
+      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/document-similarity",
+      "custom:additionalNotes": "object Object"
     },
     {
       "@id": "images/document-similarity.png",
@@ -913,7 +914,8 @@
       "image": {
         "@id": "images/keyword-analysis.png"
       },
-      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/keywords-analysis"
+      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/keywords-analysis",
+      "custom:additionalNotes": "object Object"
     },
     {
       "@id": "images/keyword-analysis.png",
@@ -1093,7 +1095,8 @@
       "image": {
         "@id": "images/quotation-tool.png"
       },
-      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/quotation-tool"
+      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/quotation-tool",
+      "custom:additionalNotes": "object Object"
     },
     {
       "@id": "images/quotation-tool.png",
@@ -1141,7 +1144,8 @@
       "image": {
         "@id": "images/semantic-tagger.png"
       },
-      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger"
+      "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger",
+      "custom:additionalNotes": "object Object"
     },
     {
       "@id": "images/semantic-tagger.png",
