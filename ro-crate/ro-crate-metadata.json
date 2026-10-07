@@ -1502,7 +1502,7 @@
           "@id": "https://w3id.org/ldac/profile#SoftwareTool"
         },
         {
-          "@id": "object Object"
+          "@id": "https://w3id.org/ldac/profile#Notebook"
         }
       ],
       "pcdm:memberOf": {
@@ -1546,7 +1546,7 @@
           "@id": "https://w3id.org/ldac/profile#SoftwareTool"
         },
         {
-          "@id": "object Object"
+          "@id": "https://w3id.org/ldac/profile#Notebook"
         }
       ],
       "pcdm:memberOf": {
@@ -1580,7 +1580,7 @@
           "@id": "https://w3id.org/ldac/profile#SoftwareTool"
         },
         {
-          "@id": "object Object"
+          "@id": "https://w3id.org/ldac/profile#Notebook"
         }
       ],
       "pcdm:memberOf": {
@@ -1621,7 +1621,7 @@
           "@id": "https://w3id.org/ldac/profile#SoftwareTool"
         },
         {
-          "@id": "object Object"
+          "@id": "https://w3id.org/ldac/profile#Notebook"
         }
       ],
       "pcdm:memberOf": {
