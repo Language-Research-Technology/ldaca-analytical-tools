@@ -557,7 +557,7 @@
         "@id": "images/discursis.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/discursis",
-      "custom:additionalNotes": "Read about Discursis on the LDaCA blog (https://www.ldaca.edu.au/resources/posts/discursis/). Based on Angus, D., Smith, A. E., & Wiles, J. (2012). Human Communication as Coupled Time Series: Quantifying Multi-Participant Recurrence. IEEE Transactions on Audio, Speech, and Language Processing, 20(6), 1795–1807. https://doi.org/10.1109/TASL.2012.2189566"
+      "custom:additionalNotes": "Read about Discursis on the LDaCA blog (https://www.ldaca.edu.au/news/posts/discursis/). Based on Angus, D., Smith, A. E., & Wiles, J. (2012). Human Communication as Coupled Time Series: Quantifying Multi-Participant Recurrence. IEEE Transactions on Audio, Speech, and Language Processing, 20(6), 1795–1807. https://doi.org/10.1109/TASL.2012.2189566"
     },
     {
       "@id": "images/discursis.png",
@@ -606,7 +606,7 @@
         "@id": "images/document-similarity.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/document-similarity",
-      "custom:additionalNotes": "Read about the Document Similarity tool on the LDaCA blog (https://www.ldaca.edu.au/resources/posts/similarity-tool/)."
+      "custom:additionalNotes": "Read about the Document Similarity tool on the LDaCA blog (https://www.ldaca.edu.au/news/posts/similarity-tool/)."
     },
     {
       "@id": "images/document-similarity.png",
@@ -915,7 +915,7 @@
         "@id": "images/keyword-analysis.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/keywords-analysis",
-      "custom:additionalNotes": "Read about the Keyword Analysis tool on the LDaCA blog (https://www.ldaca.edu.au/resources/posts/keyword-analysis/)."
+      "custom:additionalNotes": "Read about the Keyword Analysis tool on the LDaCA blog (https://www.ldaca.edu.au/news/posts/keyword-analysis/)."
     },
     {
       "@id": "images/keyword-analysis.png",
@@ -1096,7 +1096,7 @@
         "@id": "images/quotation-tool.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/quotation-tool",
-      "custom:additionalNotes": "Read about the Quotation tool on the LDaCA blog (https://www.ldaca.edu.au/resources/posts/quotation-tool/)."
+      "custom:additionalNotes": "Read about the Quotation tool on the LDaCA blog (https://www.ldaca.edu.au/news/posts/quotation-tool/)."
     },
     {
       "@id": "images/quotation-tool.png",
@@ -1145,7 +1145,7 @@
         "@id": "images/semantic-tagger.png"
       },
       "custom:codeURL": "https://github.com/Australian-Text-Analytics-Platform/semantic-tagger",
-      "custom:additionalNotes": "Read about the Semantic Tagger on the LDaCA blog (https://www.ldaca.edu.au/resources/posts/semantic-tagger/)."
+      "custom:additionalNotes": "Read about the Semantic Tagger on the LDaCA blog (https://www.ldaca.edu.au/news/posts/semantic-tagger/)."
     },
     {
       "@id": "images/semantic-tagger.png",
